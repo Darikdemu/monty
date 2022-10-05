@@ -36,9 +36,7 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
-
 typedef struct instruction_s
-
 {
 	char *opcode;
 
@@ -54,7 +52,6 @@ typedef struct instruction_s
  * Description: Single linked list of the struct instruction
  */
 typedef struct list_s
-
 {
 	int n;
 	char *inst;
@@ -101,6 +98,6 @@ void queue(stack_t **stack, unsigned int line_number);
 void stack(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, UN unsigned int line_number);
-void rotl(stack_t **stack, UN unsigned int line_number);
+void f_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter);
 void rotr(stack_t **stack, UN unsigned int line_number);
 #endif /* MONTY_H_ */
